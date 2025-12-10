@@ -28,7 +28,7 @@ sub = f'sub-{argv[1]}'
 print(sub)
 
 # directories
-denoised_dir = '~/MNINonLinear/Results/tfMRI_EMOTION_LR'
+denoised_dir = '~/MNINonLinear/Results'
 output_dir = '~/data/taskfMRI'
 
 # atlas that will be used for deterministic alignment
