@@ -53,10 +53,9 @@ def make_fc(f, scan,trim_start,trim_end):
     """
     # get subject name and task file info
     sub = os.path.basename(f).split('_')[0]
-    vid_label = os.path.basename(f).split('_')[3]
         
     # check if file is alread processed
-    outfile = opj(output_dir, f'parcellation/{sub}_{vid_label}_schaefer400p7n.hdf5')
+    outfile = opj(output_dir, f'parcellation/{sub}_{scan}_schaefer400p7n.hdf5')
         
     if os.path.exists(outfile):
         print(f"File '{outfile}' exists. Skipping the for loop.")
